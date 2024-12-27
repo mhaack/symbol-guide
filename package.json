@@ -4,7 +4,7 @@
   "description": "A curated collection of special characters",
   "scripts": {
     "start": "eleventy --serve & npx tailwindcss -i ./src/assets/styles.css -o ./_site/assets/styles.css --watch",
-    "build": "eleventy && npx tailwindcss -i ./src/assets/styles.css -o ./_site/assets/styles.css"
+    "build": "eleventy && npx tailwindcss -i ./src/assets/styles.css -o ./_site/assets/styles.css --minify"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
