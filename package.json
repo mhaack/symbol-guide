@@ -1,0 +1,15 @@
+{
+  "name": "special-characters",
+  "version": "1.0.0",
+  "description": "A curated collection of special characters",
+  "scripts": {
+    "start": "eleventy --serve & npx tailwindcss -i ./src/assets/styles.css -o ./_site/assets/styles.css --watch",
+    "build": "eleventy && npx tailwindcss -i ./src/assets/styles.css -o ./_site/assets/styles.css"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  }
+}

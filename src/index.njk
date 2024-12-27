@@ -1,0 +1,68 @@
+---
+layout: base.njk
+---
+
+<div class="min-h-screen">
+  <header class="py-8 px-4 md:px-6 max-w-7xl mx-auto">
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Special Characters Reference</h1>
+      <button id="theme-toggle" class="p-2 rounded-lg bg-gray-400 dark:bg-gray-600">
+        <svg class="w-6 h-6 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+        <svg class="w-6 h-6 hidden dark:block text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+        </svg>
+      </button>
+    </div>
+    <p class="text-gray-600 dark:text-gray-300 mb-6">
+      Click any character to copy it to your clipboard. Hover over characters to see their names and keyboard shortcuts.
+    </p>
+    <div class="relative mb-8">
+      <input type="text" 
+             id="search"
+             placeholder="Search characters..." 
+             class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-400 bg-white dark:bg-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400">
+    </div>
+  </header>
+
+  <main class="px-4 md:px-6 max-w-7xl mx-auto">
+    {% for category, data in characters %}
+    <section class="mb-12 character-section" data-category="{{ category }}">
+      <div class="flex items-center gap-2 mb-4 text-gray-800 dark:text-gray-200">
+        <span class="material-icons">{{ data.icon }}</span>
+        <h2 class="text-xl font-semibold">{{ data.label }}</h2>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        {% for item in data.symbols %}
+        <button class="character-btn relative group bg-white dark:bg-dark-purple rounded-lg p-4 text-4xl hover:bg-gray-50 dark:hover:bg-gray-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                data-char="{{ item.char }}"
+                data-name="{{ item.name }}"
+                aria-label="Copy {{ item.name }}">
+          <span class="block text-gray-900 dark:text-white">{{ item.char }}</span>
+          <div class="opacity-0 group-hover:opacity-100 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-700 text-white px-3 py-1 rounded text-sm whitespace-nowrap pointer-events-none transition-opacity duration-200">
+            <div>{{ item.name }}</div>
+            <div class="text-xs text-gray-300">{{ item.shortcut }}</div>
+          </div>
+        </button>
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </main>
+
+  <footer class="mt-12 py-8 px-4 md:px-6 border-t border-gray-200 dark:border-gray-700">
+    <div class="max-w-7xl mx-auto text-center text-gray-600 dark:text-gray-400">
+      <p class="mb-4">Common Keyboard Shortcuts:</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>© - Alt + 0169</div>
+        <div>™ - Alt + 0153</div>
+        <div>® - Alt + 0174</div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="copy-toast" class="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg transform translate-y-full opacity-0 transition-all duration-200">
+    Copied to clipboard!
+  </div>
+</div>
