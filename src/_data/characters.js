@@ -1,6 +1,9 @@
+const icons = require('./icons');
+
 module.exports = {
   currency: {
     label: 'Currency Symbols',
+    icon: icons.currency,
     symbols: [
       { char: '$', name: 'Dollar Sign', shortcut: 'Alt + 36' },
       { char: '€', name: 'Euro Sign', shortcut: 'Alt + 0128' },
@@ -18,6 +21,7 @@ module.exports = {
   },
   math: {
     label: 'Mathematical Notation',
+    icon: icons.math,
     symbols: [
       { char: '±', name: 'Plus-Minus Sign', shortcut: 'Alt + 0177' },
       { char: '≤', name: 'Less Than or Equal To', shortcut: 'Alt + 0243' },
@@ -50,6 +54,7 @@ module.exports = {
   },
   scriptNumbers: {
     label: 'Super & Subscript Numbers',
+    icon: icons.scriptNumbers,
     symbols: [
       { char: '¹', name: 'Superscript One', shortcut: 'Alt + 185' },
       { char: '²', name: 'Superscript Two', shortcut: 'Alt + 178' },
@@ -61,6 +66,7 @@ module.exports = {
   },
   fractions: {
     label: 'Fractions',
+    icon: icons.fractions,
     symbols: [
       { char: '½', name: 'One Half', shortcut: 'Alt + 0189' },
       { char: '¼', name: 'One Quarter', shortcut: 'Alt + 0188' },
@@ -69,6 +75,7 @@ module.exports = {
   },
   legal: {
     label: 'Legal & Commercial Marks',
+    icon: icons.legal,
     symbols: [
       { char: '©', name: 'Copyright', shortcut: 'Alt + 0169' },
       { char: '®', name: 'Registered Trademark', shortcut: 'Alt + 0174' },
@@ -80,6 +87,7 @@ module.exports = {
   },
   punctuation: {
     label: 'Punctuation & Quotation',
+    icon: icons.punctuation,
     symbols: [
       { char: '«', name: 'Left Double Angle Quotes', shortcut: 'Alt + 0171' },
       { char: '»', name: 'Right Double Angle Quotes', shortcut: 'Alt + 0187' },
@@ -105,6 +113,7 @@ module.exports = {
   },
   arrows: {
     label: 'Arrows & Directions',
+    icon: icons.arrows,
     symbols: [
       { char: '←', name: 'Left Arrow', shortcut: 'Alt + 8592' },
       { char: '→', name: 'Right Arrow', shortcut: 'Alt + 8594' },
@@ -127,6 +136,7 @@ module.exports = {
   },
   diacritics: {
     label: 'Diacritical Marks',
+    icon: icons.diacritics,
     symbols: [
       { char: 'ā', name: 'A with Macron', shortcut: 'Alt + 257' },
       { char: 'á', name: 'A with Acute', shortcut: 'Alt + 225' },
@@ -163,6 +173,7 @@ module.exports = {
   },
   ligatures: {
     label: 'Typographic Ligatures',
+    icon: icons.ligatures,
     symbols: [
       { char: 'æ', name: 'Small AE Ligature', shortcut: 'Alt + 230' },
       { char: 'Æ', name: 'Capital AE Ligature', shortcut: 'Alt + 198' },
@@ -172,6 +183,7 @@ module.exports = {
   },
   weather: {
     label: 'Weather Symbols',
+    icon: icons.weather,
     symbols: [
       { char: '☀', name: 'Sun', shortcut: 'Alt + 9728' },
       { char: '☼', name: 'White Sun with Rays', shortcut: 'Alt + 9788' },
@@ -189,6 +201,7 @@ module.exports = {
   },
   keyboardSymbols: {
     label: 'Keyboard & Input Symbols',
+    icon: icons.keyboard,
     symbols: [
       { char: '⌘', name: 'Command Key', shortcut: 'Alt + 8984' },
       { char: '⌥', name: 'Option Key', shortcut: 'Alt + 8997' },
@@ -202,6 +215,7 @@ module.exports = {
   },
   misc: {
     label: 'Miscellaneous Symbols',
+    icon: icons.misc,
     symbols: [
       { char: '°', name: 'Degree', shortcut: 'Alt + 0176' },
       { char: 'µ', name: 'Micro', shortcut: 'Alt + 0181' },
