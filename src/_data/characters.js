@@ -124,7 +124,7 @@ module.exports = {
       { char: '↓', name: 'Down Arrow', shortcut: 'Alt + 8595' },
       { char: '↔', name: 'Left Right Arrow', shortcut: 'Alt + 8596' },
       { char: '↕', name: 'Up Down Arrow', shortcut: 'Alt + 8597' },
-      { char: '↪', name: 'North West Arrow', shortcut: 'Alt + 8598' },
+      { char: '↖', name: 'North West Arrow', shortcut: 'Alt + 8598' },
       { char: '↗', name: 'North East Arrow', shortcut: 'Alt + 8599' },
       { char: '↘', name: 'South East Arrow', shortcut: 'Alt + 8600' },
       { char: '↙', name: 'South West Arrow', shortcut: 'Alt + 8601' },
