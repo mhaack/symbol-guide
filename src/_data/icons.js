@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { chess } = require('./characters');
 
 function readSvgFile(filename) {
   const filePath = path.join(__dirname, '..', '_includes', 'icons', filename);
@@ -18,5 +19,6 @@ module.exports = {
   ligatures: readSvgFile('ligatures.svg'),
   weather: readSvgFile('weather.svg'),
   keyboard: readSvgFile('keyboard.svg'),
-  misc: readSvgFile('misc.svg')
+  misc: readSvgFile('misc.svg'),
+  chess: readSvgFile('chess.svg')
 }; 

@@ -11,11 +11,7 @@ module.exports = {
       { char: '¥', name: 'Yen Sign', shortcut: 'Alt + 0165' },
       { char: '¢', name: 'Cent Sign', shortcut: 'Alt + 0162' },
       { char: '₿', name: 'Bitcoin', shortcut: 'Alt + 8383' },
-      { char: '₽', name: 'Ruble', shortcut: 'Alt + 8381' },
-      { char: '₹', name: 'Indian Rupee', shortcut: 'Alt + 8377' },
-      { char: '₴', name: 'Hryvnia', shortcut: 'Alt + 8372' },
       { char: '₩', name: 'Won', shortcut: 'Alt + 8361' },
-      { char: '₪', name: 'Shekel', shortcut: 'Alt + 8362' },
       { char: '¤', name: 'Generic Currency', shortcut: 'Alt + 0164' }    
     ]
   },
@@ -24,18 +20,16 @@ module.exports = {
     icon: icons.math,
     symbols: [
       { char: '±', name: 'Plus-Minus Sign', shortcut: 'Alt + 0177' },
+      { char: '×', name: 'Multiplication', shortcut: 'Alt + 0215' },
+      { char: '÷', name: 'Division', shortcut: 'Alt + 0247' },
       { char: '≤', name: 'Less Than or Equal To', shortcut: 'Alt + 0243' },
       { char: '≥', name: 'Greater Than or Equal To', shortcut: 'Alt + 0242' },
       { char: '≠', name: 'Not Equal To', shortcut: 'Alt + 8800' },
       { char: '∞', name: 'Infinity', shortcut: 'Alt + 8734' },
-      { char: 'π', name: 'Pi', shortcut: 'Alt + 227' },
       { char: '√', name: 'Square Root', shortcut: 'Alt + 8730' },
       { char: '∑', name: 'Summation', shortcut: 'Alt + 8721' },
-      { char: '∆', name: 'Delta', shortcut: 'Alt + 8710' },
       { char: '∂', name: 'Partial Differential', shortcut: 'Alt + 8706' },
       { char: '∫', name: 'Integral', shortcut: 'Alt + 8747' },
-      { char: '×', name: 'Multiplication', shortcut: 'Alt + 0215' },
-      { char: '÷', name: 'Division', shortcut: 'Alt + 0247' },
       { char: '∅', name: 'Empty Set', shortcut: 'Alt + 8709' },
       { char: '∈', name: 'Element Of', shortcut: 'Alt + 8712' },
       { char: '∩', name: 'Intersection', shortcut: 'Alt + 8745' },
@@ -45,7 +39,11 @@ module.exports = {
       { char: '∏', name: 'Product', shortcut: 'Alt + 8719' },
       { char: '≢', name: 'Not Identical To', shortcut: 'Alt + 8802' },
       { char: '⌀', name: 'Diameter', shortcut: 'Alt + 8960' },
+      { char: 'π', name: 'Pi', shortcut: 'Alt + 227' },
       { char: 'ε', name: 'Epsilon', shortcut: 'Alt + 949' },
+      { char: '∆', name: 'Delta', shortcut: 'Alt + 8710' },
+      { char: 'µ', name: 'Micro', shortcut: 'Alt + 0181' },
+      { char: 'Ω', name: 'Omega', shortcut: 'Alt + 937' },
       { char: '∝', name: 'Proportional To', shortcut: 'Alt + 8733' },
       { char: '′', name: 'Prime', shortcut: 'Alt + 8242' },
       { char: '″', name: 'Double Prime', shortcut: 'Alt + 8243' },
@@ -70,7 +68,12 @@ module.exports = {
     symbols: [
       { char: '½', name: 'One Half', shortcut: 'Alt + 0189' },
       { char: '¼', name: 'One Quarter', shortcut: 'Alt + 0188' },
-      { char: '¾', name: 'Three Quarters', shortcut: 'Alt + 0190' }
+      { char: '¾', name: 'Three Quarters', shortcut: 'Alt + 0190' },
+      { char: '⅓', name: 'One Third', shortcut: 'Alt + 8531' },
+      { char: '⅔', name: 'Two Thirds', shortcut: 'Alt + 8532' },
+      { char: '⅛', name: 'One Eighth', shortcut: 'Alt + 8539' },
+      { char: '⅜', name: 'Three Eighths', shortcut: 'Alt + 8540' },
+      { char: '⅝', name: 'Five Eighths', shortcut: 'Alt + 8541' }
     ]
   },
   legal: {
@@ -185,6 +188,9 @@ module.exports = {
     label: 'Weather Symbols',
     icon: icons.weather,
     symbols: [
+      { char: '°', name: 'Degree', shortcut: 'Alt + 0176' },
+      { char: '℃', name: 'Celsius', shortcut: 'Alt + 8451' },
+      { char: '℉', name: 'Fahrenheit', shortcut: 'Alt + 8457' },
       { char: '☀', name: 'Sun', shortcut: 'Alt + 9728' },
       { char: '☼', name: 'White Sun with Rays', shortcut: 'Alt + 9788' },
       { char: '☁', name: 'Cloud', shortcut: 'Alt + 9729' },
@@ -199,26 +205,28 @@ module.exports = {
       { char: '☼', name: 'Last Quarter Moon', shortcut: 'Alt + 9790' }
     ]
   },
-  keyboardSymbols: {
-    label: 'Keyboard & Input Symbols',
-    icon: icons.keyboard,
+  chess: {
+    label: 'Chess Symbols',
+    icon: icons.chess,
     symbols: [
-      { char: '⌘', name: 'Command Key', shortcut: 'Alt + 8984' },
-      { char: '⌥', name: 'Option Key', shortcut: 'Alt + 8997' },
-      { char: '⇪', name: 'Caps Lock', shortcut: 'Alt + 8682' },
-      { char: '⇧', name: 'Shift Key', shortcut: 'Alt + 8679' },
-      { char: '⌃', name: 'Control Key', shortcut: 'Alt + 8963' },
-      { char: '⌫', name: 'Backspace', shortcut: 'Alt + 9003' },
-      { char: '⌦', name: 'Delete', shortcut: 'Alt + 9006' },
-      { char: '⌨', name: 'Keyboard', shortcut: 'Alt + 9000' }
+      { char: '♔', name: 'White King', shortcut: 'Alt + 9812' },
+      { char: '♚', name: 'Black King', shortcut: 'Alt + 9818' },
+      { char: '♕', name: 'White Queen', shortcut: 'Alt + 9813' },
+      { char: '♛', name: 'Black Queen', shortcut: 'Alt + 9819' },
+      { char: '♗', name: 'White Bishop', shortcut: 'Alt + 9815' },
+      { char: '♝', name: 'Black Bishop', shortcut: 'Alt + 9821' },
+      { char: '♘', name: 'White Knight', shortcut: 'Alt + 9816' },
+      { char: '♞', name: 'Black Knight', shortcut: 'Alt + 9822' },
+      { char: '♙', name: 'White Pawn', shortcut: 'Alt + 9817' },
+      { char: '♟', name: 'Black Pawn', shortcut: 'Alt + 9823' },
+      { char: '♖', name: 'White Rook', shortcut: 'Alt + 9814' },
+      { char: '♜', name: 'Black Rook', shortcut: 'Alt + 9820' }
     ]
   },
   misc: {
     label: 'Miscellaneous Symbols',
     icon: icons.misc,
     symbols: [
-      { char: '°', name: 'Degree', shortcut: 'Alt + 0176' },
-      { char: 'µ', name: 'Micro', shortcut: 'Alt + 0181' },
       { char: '•', name: 'Bullet', shortcut: 'Alt + 0149' },
       { char: '♥', name: 'Heart', shortcut: 'Alt + 9829' },
       { char: '★', name: 'Star', shortcut: 'Alt + 9733' },
@@ -238,7 +246,13 @@ module.exports = {
       { char: '⏸', name: 'Pause', shortcut: 'Alt + 9208' },
       { char: '⏹', name: 'Stop', shortcut: 'Alt + 9209' },
       { char: '⏺', name: 'Record', shortcut: 'Alt + 9210' },
-      { char: '▶', name: 'Play', shortcut: 'Alt + 9654' }
+      { char: '▶', name: 'Play', shortcut: 'Alt + 9654' },
+      { char: '♲', name: 'Recycling Symbol', shortcut: 'Alt + 9842' },
+      { char: '♻', name: 'Black Universal Recycling Symbol', shortcut: 'Alt + 9851' },
+      { char: '♼', name: 'Recycled Paper Symbol', shortcut: 'Alt + 9852' },
+      { char: '♽', name: 'Partially Recycled Paper Symbol', shortcut: 'Alt + 9853' },
+      { char: '⌁', name: 'Electric Arrow', shortcut: 'Alt + 8993' },
+      { char: '⌂', name: 'House', shortcut: 'Alt + 8962' }
     ]
   }
 };
