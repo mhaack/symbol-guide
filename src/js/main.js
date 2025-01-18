@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => btn.classList.remove('copied'), 500);
         
         // Show toast
-        copyToast.classList.remove('translate-y-full', 'opacity-0');
+        copyToast.classList.remove('translate-y-full', 'hidden');
         setTimeout(() => {
-          copyToast.classList.add('translate-y-full', 'opacity-0');
-        }, 2000);
+          copyToast.classList.add('translate-y-full', 'hidden');
+        }, 2500);
       } catch (err) {
         console.error('Failed to copy:', err);
       }
