@@ -4,12 +4,15 @@
   "description": "A curated collection of special characters",
   "scripts": {
     "dev": "eleventy --serve & npx tailwindcss -i ./src/assets/styles.css -o ./_site/assets/styles.css --watch",
-    "build": "eleventy && npx tailwindcss -i ./src/assets/styles.css -o ./_site/assets/styles.css --minify"
+    "build": "NODE_ENV=production eleventy && npx tailwindcss -i ./src/assets/styles.css -o ./_site/assets/styles.css --minify"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5"
+  },
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0"
   }
 }
